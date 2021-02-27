@@ -1,0 +1,109 @@
+<div >  
+    <div data-id="statistic-app" >
+        <h3 class="titulo-widget">GEO IMPACTOS DE INTERVENCIONES POTENCIALES</h3>
+        <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Launch demo modal
+          </button>-->
+
+        <div class="search-options-container">
+            <label v-if="filterValues">
+                <span>Filtrar por Distrito:</span>
+                <select v-model="filteredValue">
+                    <option value="">Ninguno</option>
+                    <option v-for="value in filterValues" :value="value">{{value}}</option>
+                </select>
+            </label>           
+            <div class="selector-types">
+                
+                <button type="button" :class="{'active': currentSelectionShape === 'polygon'}" @click="activateSelection('polygon')"><span>Polígono</span><i class="esri-icon-polygon"></i></button>
+                <button type="button" :class="{'active': currentSelectionShape === 'rectangle'}" @click="activateSelection('rectangle')"><span>Rectángulo</span><i class="esri-icon-checkbox-unchecked"></i></button>
+                <button type="button" :class="{'active': currentSelectionShape === 'circle'}" @click="activateSelection('circle')"><span>Círculo</span><i class="esri-icon-radio-unchecked"></i></button>
+                <button type="button" @click="clearSelection"><span>Limpiar</span><i class="esri-icon-trash"></i></button>
+                
+                
+            </div> 
+            <div class="selector-types" v-show="!processing && statistics && statistics.length > 0" >
+
+                <button  type="button" @click="printMap" :disabled="downloading">{{ downloading ? "Generando informe..." : "Descargar PDF"}}</button>
+                <button  type="button" @click="guardarConsulta()" :disabled="!user"> Guardar</button>
+            </div>
+
+        </div>
+        <div v-if="!processing && !statistics">
+            <p style="text-align: center;">
+                <br>
+                Seleccione un grupo de manzanas para ver su información estadística.
+            </p>
+        </div>
+        <div v-show="!processing && statistics && statistics.length === 0" class="results-container">
+            <p style="text-align: center;">No se encontrar resultados</p>
+        </div>
+        <div v-show="!processing && statistics && statistics.length > 0" class="results-container" data-id="resultsContainer">
+            <!--<div class="selector-types">
+
+            
+                <button  type="button" @click="printMap" :disabled="downloading">{{ downloading ? "Generando informe..." : "Descargar PDF"}}</button>
+                <button  type="button" @click="guardarConsulta()" :disabled="!user"> Guardar</button>
+            </div>-->
+            
+            <table class="table-fill" ref="statistics-table">
+                <thead>
+                    <tr>
+                        <th  class="text-left">
+                            <span>Indicador</span>
+                            
+                        </th>
+
+                        <th  class="text-left">
+                            <span>Valor</span>
+                            
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(statistic, index) in statistics" :key="index">
+                        <td>{{statistic.description}}</td>
+                        <td>{{statistic.value}}</td>
+                    </tr>
+                </tbody>
+            </table>            
+            <div class="chart-container" data-id="chart-container" ref="chart-container" style="height: 400px;">
+                <div class="chart" v-for="(chartDef, index) in chartDefs" :key="index">
+                    <h3>{{ chartDef.description}}</h3>
+                    <div :ref="chartDef.id"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div v-if="processing" class="jimu-agol-loading jimu-loading-indicator">
+            <div class="loading-container">
+                <div data-dojo-attach-point="loadingNode" class="img-div"></div>
+            </div>
+        </div>
+    </div> 
+    
+    <div data-id="vertexCount"></div>
+    
+    <!--
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    -->
+</div>
+

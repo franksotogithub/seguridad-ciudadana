@@ -1,0 +1,32 @@
+
+<div>
+<div data-id="login-app">
+  <div  v-if="user" >
+    <div>Email:{{user.email}}</div>
+    <div class="login-buttons">
+      <button @click="cerrarSesion()" > Cerrar Sesion</button> 
+    </div>
+   
+  </div>
+
+  <div v-else>  
+    <div> Login</div>
+    <div class="form-group" id="login-form">
+      <div><label>Usuario:</label> <input  v-model="email" placeholder="ingrese email" id="login-email" class="" type="text"/></div> 
+      <div><label>Password:</label> <input  v-model="password" placeholder="ingrese password"  id="login-password"  class="" type="password"/></div>
+      
+      <div class="login-buttons"> 
+        <div  style='float: left;' ><button  @click="login($event)"> Iniciar</button> </div>
+        
+        <div  style='float: right;'  > <button  @click="loginGooogle($event)" > Google</button> </div>
+       
+      </div>
+      <div class="container error"  id="loginError">{{loginError}}</div>
+    </div>
+  </div>
+  
+  
+	
+</div>
+
+</div>

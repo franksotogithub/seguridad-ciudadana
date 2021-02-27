@@ -1,0 +1,46 @@
+/*.form-group{
+ width: 100%
+}*/
+
+
+input[type=text], select ,textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+button{
+  border: 1px solid #1b1e24;
+  color: #1b1e24;
+  background: white;
+  padding: .5em;
+  cursor: pointer;
+  /*margin: .5em;
+  display: flex;*/
+}
+
+button:hover,
+button.active{
+  color: white;
+  background: #1b1e24;
+}
+
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.error-message{
+  color: chocolate;
+  
+
+}

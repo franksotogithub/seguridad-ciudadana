@@ -1,0 +1,34 @@
+<div>
+<div data-id="historial-app" >
+  <!--<h1 class="titulo-widget">GEO IMPACTOS DE INTERVENCIONES POTENCIALES</h1>-->
+  <div  v-if="consultas && consultas.length>0" >
+    <table  class="history">
+        <thead>
+            <!--<tr >
+                <th  colspan="3" class="text-left">
+                    <span>Historial de Busquedas</span>
+                    
+                </th>
+            
+            </tr>-->
+
+            <tr>
+                <th> Titulo</th>
+                <th> Fecha</th>
+                <th> Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="consulta in consultas" :consulta="consulta">  
+                <td> {{consulta.titulo | ''}}</td>
+                <td >{{ consulta.fecha | dateToString }}</td>
+                <td>
+                    <button type="button"  @click="busqueda(consulta)"><i class="esri-icon-visible"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>            
+
+</div>
+</div>
+</div>

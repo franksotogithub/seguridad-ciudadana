@@ -1,0 +1,177 @@
+{
+  "showTitle": true,
+  "showBasemap": false,
+  "showLegend": false,
+  "expandAllLayersByDefault": false,
+  "contextMenu": {
+    "ZoomTo": true,
+    "Transparency": true,
+    "SetVisibilityRange": true,
+    "EnableOrDisablePopup": true,
+    "ControlLabels": true,
+    "MoveupOrMovedown": true,
+    "OpenAttributeTable": true,
+    "DescriptionOrShowItemDetailsOrDownload": true
+  },
+  "layerOptions": {
+    "Mz_Variables_Unificado": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_0": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_1": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_2": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_3": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_4": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_5": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_6": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_7": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_8": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_9": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_10": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_11": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_12": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_13": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_14": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_15": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_16": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_17": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_18": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_19": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_20": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_21": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_22": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_23": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_24": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_25": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_26": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_27": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_28": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_29": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_30": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_31": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_32": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_33": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_34": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_35": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_36": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_37": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_38": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_39": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_40": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_41": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_42": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_43": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_44": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_45": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_46": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_47": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_48": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_49": {
+      "display": true
+    },
+    "Mapa_Base_Lima_9624_50": {
+      "display": true
+    }
+  }
+}

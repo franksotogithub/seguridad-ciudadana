@@ -1,0 +1,83 @@
+﻿{
+    "configText": "abcdefg",
+    "layerId": "Mz_Variables_Unificado",
+    "layerUrl": "https://siu.imp.gob.pe/arcgis/rest/services/Mz_Variables_Unificado/MapServer/0",
+    "filterByField": "DISTRITO",
+    "layerFieldLink": "IDMANZANA",
+    "useSameLayer": true,
+    "tableKey" :"OBJECTID",
+    "tableId": "Mz_Variables_Unificado",
+    "tableFieldLink": "IDMANZANA",
+    "linkFieldType": "string",
+    "statisticsDefinition": {
+      "table": [
+        {
+          "id": "idmanzana_count",
+          "fieldName": "idmanzana",
+          "operation": "count",
+          "description": "Cantidad total de manzanas"
+        },
+        {
+          "id": "poblacion_sum",
+          "fieldName": "POBLACION",
+          "operation": "sum",
+          "description": "Población total de manzanas seleccionadas"
+        },
+        {
+          "id": "hogtotal_sum",
+          "fieldName": "HOGTOTAL",
+          "operation": "sum",
+          "description": "Cantidad total de hogares"
+        },
+  {"id": "get_0_4_sum", "fieldName": "GET_0_4", "operation": "sum", "description": "Cantidad  de personas vulnerables de 0 a 5 años"},
+        {
+          "id": "get_60_sum",
+          "fieldName": "GET_60",
+          "operation": "sum",
+          "description": "Cantidad  de personas vulnerables mayor a 60 años"
+        },
+        {
+          "id": "tvivhacin_sum",
+          "fieldName": "TVIVHACIN",
+          "operation": "sum",
+          "description": "Total de viviendas hacinadas en las manzanas seleccionadas"
+        },
+        {
+          "id": "redagua_sum",
+          "fieldName": "REDAGUA",
+          "operation": "sum",
+          "description": "Cantidad de viviendas conectadas a la red públic de agua"
+        },
+  
+        {"id": "densidad_avg", "fieldName": "DENSPOB", "operation": "avg", "description": "Promedio de densidad poblacional"}
+  
+  
+  
+  
+      ],
+      
+      "charts": [
+        {
+          "id": "est_socio_count",
+          "fieldName": "EST_SOCIO",
+          "operation": "count",
+          "description": "Nivel Socioeconómico",
+          "groupBy": [
+            "EST_SOCIO"
+          ],
+          "chart": "pie"
+        },
+        {
+          "id": "distrito_count",
+          "fieldName": "DISTRITO",
+          "operation": "count",
+          "description": "Distrito",
+          "groupBy": [
+            "DISTRITO"
+          ],
+          "chart": "pie"
+        }
+      ]
+    }
+  }
+  

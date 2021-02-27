@@ -1,0 +1,506 @@
+{
+  "theme": {
+    "name": "LaunchpadTheme",
+    "styles": [
+      "default",
+      "style2",
+      "style3"
+    ],
+    "version": "2.16",
+    "sharedTheme": {
+      "useHeader": true,
+      "useLogo": false,
+      "isPortalSupport": true
+    },
+    "customStyles": {
+      "mainBackgroundColor": null
+    }
+  },
+  "portalUrl": "https://siu.imp.gob.pe/portal",
+  "appId": "",
+  "authorizedCrossOriginDomains": [],
+  "title": "Seguridad Ciudadana",
+  "subtitle": "Instituto Metropolitano de Planificación",
+  "keepAppState": true,
+  "logo": "images/logo.png",
+  "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
+  "links": [],
+  "widgetOnScreen": {
+    "widgets": [
+      {
+        "uri": "themes/LaunchpadTheme/widgets/AnchorBarController/Widget",
+        "position": {
+          "bottom": 10,
+          "height": 40,
+          "relativeTo": "map",
+          "zIndex": 0
+        },
+        "version": "2.16",
+        "id": "themes_LaunchpadTheme_widgets_AnchorBarController_Widget_20",
+        "name": "AnchorBarController",
+        "icon": "themes/LaunchpadTheme/widgets/AnchorBarController/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "themes/LaunchpadTheme/widgets/Header/Widget",
+        "position": {
+          "left": 15,
+          "top": 17,
+          "width": 670,
+          "height": 46,
+          "relativeTo": "map"
+        },
+        "version": "2.16",
+        "id": "themes_LaunchpadTheme_widgets_Header_Widget_21",
+        "name": "Header",
+        "icon": "themes/LaunchpadTheme/widgets/Header/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "widgets/Search/Widget",
+        "position": {
+          "left": 350,
+          "top": 25,
+          "width": 300,
+          "zIndex": 1,
+          "relativeTo": "map"
+        },
+        "version": "2.16",
+        "id": "widgets_Search_Widget_22",
+        "name": "Search",
+        "icon": "widgets/Search/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "widgets/OverviewMap/Widget",
+        "position": {
+          "right": 20,
+          "top": 20,
+          "relativeTo": "map"
+        },
+        "version": "2.16",
+        "id": "widgets_OverviewMap_Widget_23",
+        "name": "OverviewMap",
+        "config": "configs/OverviewMap/config_widgets_OverviewMap_Widget_23.json",
+        "visible": false,
+        "icon": "widgets/OverviewMap/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "widgets/ZoomSlider/Widget",
+        "position": {
+          "left": 25,
+          "top": 95,
+          "relativeTo": "map"
+        },
+        "version": "2.16",
+        "id": "widgets_ZoomSlider_Widget_24",
+        "name": "ZoomSlider",
+        "icon": "widgets/ZoomSlider/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "widgets/HomeButton/Widget",
+        "position": {
+          "left": 25,
+          "top": 175,
+          "relativeTo": "map"
+        },
+        "id": "widgets_HomeButton_Widget_25",
+        "name": "HomeButton",
+        "version": "2.16",
+        "icon": "widgets/HomeButton/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "widgets/MyLocation/Widget",
+        "position": {
+          "left": 25,
+          "top": 215,
+          "relativeTo": "map"
+        },
+        "version": "2.16",
+        "id": "widgets_MyLocation_Widget_26",
+        "name": "MyLocation",
+        "icon": "widgets/MyLocation/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "",
+        "version": "2.18",
+        "position": {
+          "right": 20,
+          "bottom": 80,
+          "relativeTo": "map"
+        },
+        "closeable": true,
+        "id": "widgets_AttributeTable_Widget_27",
+        "placeholderIndex": 1,
+        "icon": "widgets/WidgetB/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "widgets/Coordinate/Widget",
+        "position": {
+          "left": 20,
+          "bottom": 60,
+          "relativeTo": "map"
+        },
+        "id": "widgets_Coordinate_Widget_28",
+        "name": "Coordinate",
+        "version": "2.16",
+        "icon": "widgets/Coordinate/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "widgets/Scalebar/Widget",
+        "position": {
+          "left": 27,
+          "bottom": 25,
+          "relativeTo": "map"
+        },
+        "version": "2.16",
+        "id": "widgets_Scalebar_Widget_29",
+        "name": "Scalebar",
+        "icon": "widgets/Scalebar/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "widgets/Splash/Widget",
+        "position": {
+          "relativeTo": "browser"
+        },
+        "version": "2.16",
+        "id": "widgets_Splash_Widget_30",
+        "name": "Splash",
+        "label": "Presentación",
+        "config": "configs/Splash/config_widgets_Splash_Widget_30.json",
+        "icon": "widgets/Splash/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "position": {
+          "right": 130,
+          "top": 20,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 2,
+        "id": "widgets_FormHistorial_31",
+        "version": "2.18",
+        "closeable": true,
+        "uri": "widgets/FormHistorial/Widget",
+        "openAtStart": false,
+        "icon": "widgets/FormHistorial/images/icon.png?wab_dv=2.18",
+        "name": "FormHistorial",
+        "label": "Guardar Datos",
+        "config": "configs/FormHistorial/config_widgets_FormHistorial_31.json"
+      },
+      {
+        "position": {
+          "right": 180,
+          "top": 20,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 3,
+        "id": "widgets_Login_Widget_32",
+        "name": "Login",
+        "label": "Login",
+        "version": "2.18",
+        "closeable": true,
+        "icon": "configs\\Login\\icon_widgets_Login_Widget_32.png",
+        "uri": "widgets/Login/Widget",
+        "config": "configs/Login/config_widgets_Login_Widget_32.json"
+      },
+      {
+        "position": {
+          "right": 230,
+          "top": 20,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 4,
+        "id": "_33",
+        "name": "BasemapGallery",
+        "version": "2.16",
+        "closeable": true,
+        "uri": "widgets/BasemapGallery/Widget",
+        "config": "configs/BasemapGallery/config__33.json",
+        "icon": "widgets/BasemapGallery/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "widgets/ExtentNavigate/Widget",
+        "visible": false,
+        "position": {
+          "top": 255,
+          "left": 25,
+          "relativeTo": "map"
+        },
+        "version": "2.16",
+        "id": "widgets_ExtentNavigate_Widget_34",
+        "name": "ExtentNavigate",
+        "icon": "widgets/ExtentNavigate/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "widgets/FullScreen/Widget",
+        "visible": false,
+        "position": {
+          "right": 70,
+          "top": 20,
+          "relativeTo": "map"
+        },
+        "version": "2.16",
+        "id": "widgets_FullScreen_Widget_35",
+        "name": "FullScreen",
+        "icon": "widgets/FullScreen/images/icon.png?wab_dv=2.18"
+      }
+    ],
+    "panel": {
+      "uri": "jimu/OnScreenWidgetPanel",
+      "position": {
+        "relativeTo": "map"
+      }
+    }
+  },
+  "map": {
+    "3D": false,
+    "2D": true,
+    "position": {
+      "left": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "itemId": "3cc6f306207e448ba164bd7b8e933b5a",
+    "mapOptions": {},
+    "id": "map",
+    "portalUrl": "https://siu.imp.gob.pe/portal",
+    "mapRefreshInterval": {
+      "useWebMapRefreshInterval": true
+    }
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/LaunchpadTheme/panels/LaunchpadPanel/Panel",
+      "position": {
+        "relativeTo": "map"
+      }
+    },
+    "widgets": [
+      {
+        "uri": "widgets/Legend/Widget",
+        "version": "2.16",
+        "id": "widgets_Legend_Widget_18",
+        "name": "Legend",
+        "index": 2,
+        "icon": "widgets/Legend/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "uri": "widgets/LayerList/Widget",
+        "version": "2.16",
+        "id": "widgets_LayerList_Widget_19",
+        "name": "LayerList",
+        "index": 3,
+        "icon": "widgets/LayerList/images/icon.png?wab_dv=2.18"
+      },
+      {
+        "name": "Estadisticas_Imp",
+        "label": "Reporte Estadístico",
+        "version": "2.16",
+        "icon": "configs/Estadisticas_Imp/icon_widgets_Estadisticas_Imp_Widget_36.png",
+        "uri": "widgets/Estadisticas_Imp/Widget",
+        "config": "configs/Estadisticas_Imp/config_widgets_Estadisticas_Imp_Widget_36.json",
+        "index": 4,
+        "id": "widgets_Estadisticas_Imp_Widget_36",
+        "openAtStart": true
+      },
+      {
+        "name": "Historial",
+        "version": "2.18",
+        "icon": "configs\\Historial\\icon_widgets_Historial_Widget_37.png",
+        "uri": "widgets/Historial/Widget",
+        "config": "configs/Historial/config_widgets_Historial_Widget_37.json",
+        "index": 6,
+        "id": "widgets_Historial_Widget_37",
+        "label": "Historial de Búsquedas",
+        "openAtStart": true
+      }
+    ],
+    "groups": []
+  },
+  "mobileLayout": {
+    "widgetOnScreen": {
+      "widgets": [
+        {
+          "uri": "themes/LaunchpadTheme/widgets/AnchorBarController/Widget",
+          "position": {
+            "bottom": 0,
+            "height": 40,
+            "width": "100%",
+            "zIndex": 0,
+            "relativeTo": "map"
+          },
+          "version": "2.16"
+        },
+        {
+          "uri": "themes/LaunchpadTheme/widgets/Header/Widget",
+          "position": {
+            "left": 0,
+            "right": 0,
+            "top": 0,
+            "height": 46,
+            "relativeTo": "map"
+          },
+          "version": "2.16"
+        },
+        {
+          "uri": "widgets/Search/Widget",
+          "position": {
+            "left": 10,
+            "top": 10,
+            "right": 10,
+            "zIndex": 0,
+            "relativeTo": "map"
+          },
+          "version": "2.16"
+        },
+        {
+          "uri": "widgets/OverviewMap/Widget",
+          "position": {
+            "right": 20,
+            "top": 20
+          },
+          "version": "2.16"
+        },
+        {
+          "uri": "widgets/ZoomSlider/Widget",
+          "position": {
+            "right": 10,
+            "bottom": 160,
+            "relativeTo": "map"
+          },
+          "version": "2.16"
+        },
+        {
+          "uri": "widgets/HomeButton/Widget",
+          "position": {
+            "right": 10,
+            "bottom": 75,
+            "relativeTo": "map"
+          }
+        },
+        {
+          "uri": "widgets/MyLocation/Widget",
+          "inPanel": false,
+          "position": {
+            "right": 10,
+            "bottom": 115,
+            "relativeTo": "map"
+          },
+          "version": "2.16"
+        },
+        {
+          "uri": "widgets/AttributeTable/Widget",
+          "version": "2.16",
+          "position": {
+            "left": 10,
+            "bottom": 70,
+            "relativeTo": "map"
+          },
+          "closeable": true
+        },
+        {
+          "uri": "widgets/Coordinate/Widget",
+          "position": {
+            "left": 20,
+            "bottom": 60
+          }
+        },
+        {
+          "uri": "widgets/Scalebar/Widget",
+          "position": {
+            "left": 50,
+            "bottom": 70,
+            "relativeTo": "map"
+          },
+          "version": "2.16"
+        },
+        {
+          "uri": "widgets/Splash/Widget",
+          "visible": false,
+          "position": {
+            "relativeTo": "browser"
+          },
+          "version": "2.16"
+        },
+        {
+          "position": {
+            "left": 10,
+            "bottom": 195,
+            "relativeTo": "map"
+          }
+        },
+        {
+          "position": {
+            "left": 10,
+            "bottom": 155,
+            "relativeTo": "map"
+          }
+        },
+        {
+          "position": {
+            "left": 10,
+            "bottom": 115,
+            "relativeTo": "map"
+          }
+        },
+        {
+          "uri": "widgets/ExtentNavigate/Widget",
+          "visible": false,
+          "position": {
+            "right": 10,
+            "bottom": 238,
+            "relativeTo": "map"
+          },
+          "version": "2.16"
+        },
+        {
+          "uri": "widgets/FullScreen/Widget",
+          "visible": false,
+          "position": {
+            "right": 70,
+            "top": 20
+          },
+          "version": "2.16"
+        }
+      ]
+    },
+    "map": {
+      "position": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    "widgetPool": {
+      "panel": {
+        "uri": "themes/LaunchpadTheme/panels/LaunchpadPanel/Panel"
+      }
+    }
+  },
+  "loadingPage": {
+    "backgroundColor": "#508dca",
+    "backgroundImage": {
+      "visible": false
+    },
+    "loadingGif": {
+      "visible": true,
+      "uri": "configs/loading/images/predefined_loading_1.gif",
+      "width": 58,
+      "height": 29
+    }
+  },
+  "wabVersion": "2.18",
+  "isTemplateApp": true,
+  "isWebTier": false,
+  "httpProxy": {
+    "useProxy": true,
+    "alwaysUseProxy": false,
+    "url": "https://",
+    "rules": []
+  },
+  "dataSource": {
+    "dataSources": {},
+    "settings": {}
+  },
+  "logoLink": "",
+  "logoAlt": ""
+}
